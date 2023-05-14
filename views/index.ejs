@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <main>
+    <h1><%= title %></h1>
+    <br>
+    <button><a href="/new">Add new View</a></button>
+    <ul>
+      <% messages.forEach((message) => {  %>
+      <li>
+        <b><%= message.user %>:</b>  <%= message.text %>
+          <br>
+        <i><%= message.added %></i>
+      </li>
+      <% }) %>
+    </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form action="/new" method="POST">
+      <span>Name:</span><input type="text" name="name" required>
+      <br><br>
+      <span>Message:</span><input type="text" name="message" required>
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
