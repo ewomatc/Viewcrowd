@@ -35,4 +35,7 @@ router.post('/new', (req, res, next) => {
   messages.unshift({text: body.message, user: body.name, added: new Date()})  
   res.redirect('/')
 })
+
+
+
 module.exports = router;
